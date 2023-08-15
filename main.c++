@@ -42,11 +42,11 @@ void setup() {
   for(int i = 0; i < 5; i++) 
     pinMode(lightPin[i], INPUT);
 
-  ESP32PWM::allocateTimer(0);
+  	ESP32PWM::allocateTimer(0);
 	ESP32PWM::allocateTimer(1);
 	ESP32PWM::allocateTimer(2);
 	ESP32PWM::allocateTimer(3);
-  ESP32PWM::allocateTimer(4);
+  	ESP32PWM::allocateTimer(4);
 
 	servo1.setPeriodHertz(50);      // Standard 50hz servo
 	servo2.setPeriodHertz(50);      // Standard 50hz servo
